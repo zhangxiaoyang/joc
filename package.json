@@ -12,13 +12,25 @@
     "mocha": "^3.0.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/index.js --timeout 10000",
-    "cov": "./node_modules/.bin/istanbul cover --print both ./node_modules/.bin/_mocha -- test/index.js"
+    "test": "mocha test/index.js --timeout 10000",
+    "cov": "istanbul cover --print both ./node_modules/.bin/_mocha -- test/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhangxiaoyang/joc.git"
+    "url": "git+https://github.com/zhangxiaoyang/joc.git"
   },
   "author": "zhangxiaoyang",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangxiaoyang/joc/issues"
+  },
+  "homepage": "https://github.com/zhangxiaoyang/joc#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "object",
+    "schema",
+    "converter"
+  ]
 }
