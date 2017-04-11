@@ -6,7 +6,7 @@ Object schema converter for JavaScript objects.
 Example
 ---
 
-```
+```javascript
 var template = {
   name: [
     '$.firstname',
@@ -60,7 +60,8 @@ console.log(conv_json);
     height: 180.0,
     weight: 70.0
   }
-};*/
+};
+*/
 ```
 
 License
