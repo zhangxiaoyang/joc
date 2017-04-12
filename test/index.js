@@ -243,4 +243,43 @@ describe('Joc', function() {
       }
     });
   });
+
+  it('convert 5', function() {
+    var template = {
+      name: [
+        '$.firstname',
+        '$.lastname',
+        function(firstname, lastname) {
+          return firstname + ' ' + lastname;
+        },
+      ],
+      email: ['$.email', Joc.func.callObjectFunc(String, 'trim')],
+      phone: ['$.phone', Joc.func.toString('+86%s')],
+      friends: '$.friends',
+      other: {
+        age: ['$.age', Joc.func.toNumber()],
+        height: ['$.height', Joc.func.toNumber('float')],
+        weight: ['$.weight', Joc.func.toNumber('float')]
+      }
+    };
+    var json = {
+      firstname: 'Sheep',
+      lastname: 'X'
+    };
+    var conv_json = Joc.convert({
+      template: template,
+      json: json
+    });
+    conv_json.should.eql({
+      name: 'Sheep X',
+      email: undefined,
+      phone: undefined,
+      friends: undefined,
+      other: {
+        age: undefined,
+        height: undefined,
+        weight: undefined
+      }
+    });
+  });
 });
