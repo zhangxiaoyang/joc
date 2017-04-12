@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/joc.svg)](http://badge.fury.io/js/joc)
 [![Build Status](https://travis-ci.org/zhangxiaoyang/joc.svg?branch=master)](https://travis-ci.org/zhangxiaoyang/joc)
 
 Object schema converter for JavaScript objects.
