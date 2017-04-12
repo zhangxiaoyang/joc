@@ -1,7 +1,14 @@
+[![Build Status](https://travis-ci.org/zhangxiaoyang/joc.svg?branch=master)](https://travis-ci.org/zhangxiaoyang/joc)
+
+Object schema converter for JavaScript objects.
+
 Joc
 ===
 
-Object schema converter for JavaScript objects.
+Installation
+---
+
+npm install joc -g
 
 Example
 ---
